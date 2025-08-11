@@ -38,7 +38,7 @@ This shell implements a range of standard and custom functionalities:
 To compile the shell, you need a C compiler (`gcc`) and to link the pthreads library (for the `delay-thread` feature). Run the following command in your terminal:
 
 ```bash
-gcc Shell_project.c job_control.c -o shell -lpthread
+gcc Shell_project.c job_control.c -o shell 
 ```
 
 ### Execution
