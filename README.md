@@ -4,6 +4,13 @@ This project is a custom UNIX shell implemented in C, developed as a practical a
 
 It serves as a command-line interface that allows a user to execute programs and manage tasks, supporting both foreground and background execution, job suspension and resumption, and several advanced features.
 
+## Project File Structure
+
+*   `Shell_project.c`: The main source file containing the shell's primary loop, command parsing, and logic for handling user input and launching processes.
+*   `job_control.c`: Implements the data structures and functions for managing the job list (adding, deleting, searching for jobs) and handling process states.
+*   `job_control.h`: The header file for the job control module, defining the `job` structure, function prototypes, and useful macros.
+*   `parse_redir.h`: A helper header containing the function to parse I/O redirection operators (`<` and `>`) from the command line.
+  
 ## Features
 
 This shell implements a range of standard and custom functionalities:
@@ -94,9 +101,4 @@ COMMAND->delay-thread 10 xeyes
 COMMAND->mask 2 -c some_command
 ```
 
-## Project File Structure
 
-*   `Shell_project.c`: The main source file containing the shell's primary loop, command parsing, and logic for handling user input and launching processes.
-*   `job_control.c`: Implements the data structures and functions for managing the job list (adding, deleting, searching for jobs) and handling process states.
-*   `job_control.h`: The header file for the job control module, defining the `job` structure, function prototypes, and useful macros.
-*   `parse_redir.h`: A helper header containing the function to parse I/O redirection operators (`<` and `>`) from the command line.
